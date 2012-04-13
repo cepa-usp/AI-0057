@@ -1,0 +1,4 @@
+h1. Versores polares
+
+Esta Atividade Interativa (AI) do tipo questionário sorteia um ponto P qualquer e solicita ao usuário que posicione (visualmente) os vetores \hat{e}_{\rho} e \hat{e}_{\phi} (versores polares). O usuário deve também responder qual é o vetor posição no sistema de coordenadas polares.
+
