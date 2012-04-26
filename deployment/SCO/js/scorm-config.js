@@ -12,8 +12,6 @@ var pingCount = 0;  // Conta a quantidade de pings enviados para o LMS
 // Inicia a AI.
 $(document).ready(function(){
   
-  $('#exercicios').tabs({ selected: 2 });
-  
   $('#exercicios').tabs({
       select: function(event, ui) {
         screenExercise = ui.index + 1;
