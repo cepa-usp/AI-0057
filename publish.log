@@ -2,6 +2,10 @@ Copying from /c/Users/Maria Isabel/AIs/AI-0057 to cepa@arquivos.atp.usp.br:/work
 building file list ... done
 AI-0057_SCO.zip
 index.html
+SCO/index.html
+SCO/css/style.css
+SCO/js/jquery-ui-1.8.5.custom.min.js
+SCO/js/scorm-config.js
 
-sent 49928 bytes  received 1280 bytes  102416.00 bytes/sec
-total size is 9049497  speedup is 176.72
+sent 26770 bytes  received 2898 bytes  59336.00 bytes/sec
+total size is 9051123  speedup is 305.08
