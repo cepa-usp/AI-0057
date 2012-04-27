@@ -11,11 +11,7 @@
 }
 
 .completion-message-on {
-<<<<<<< HEAD
   font-family: Verdana, Helvetica, sans-serif;
-=======
-  font-family: Arial, Helvetica, sans-serif;
->>>>>>> 7da239737a7f20160b322b4afbcea30eb7c830ef
   font-size: 12px;
   color: #880000;/* #005500;*/
   /*background-color: #66CC66;
@@ -30,39 +26,24 @@ h3 {
 }
 
 body {
-<<<<<<< HEAD
   margin-left: 40px;
   font: 66% "Verdana", Helvetica, sans-serif; margin: 50px;}
 }
 
 
-=======
-  font-family: Arial, Helvetica, sans-serif;
-  margin-left: 40px;
-}
-
->>>>>>> 7da239737a7f20160b322b4afbcea30eb7c830ef
 #ai {
   display: inline-block;
 }
 
 #about, #about a {
-<<<<<<< HEAD
   font-family: Verdana, Helvetica, sans-serif;
-=======
-  font-family: Arial, Helvetica, sans-serif;
->>>>>>> 7da239737a7f20160b322b4afbcea30eb7c830ef
   font-size: 8px;
   color: #888888;
   font-size: small;
 }
 
 .right-answer {
-<<<<<<< HEAD
   font-family: Verdana, Helvetica, sans-serif;
-=======
-  font-family: Arial, Helvetica, sans-serif;
->>>>>>> 7da239737a7f20160b322b4afbcea30eb7c830ef
   font-weight: bold;
   font-size: 15px;
   color: #008800;
@@ -71,11 +52,7 @@ body {
 }
 
 .wrong-answer {
-<<<<<<< HEAD
   font-family: Verdana, Helvetica, sans-serif;
-=======
-  font-family: Arial, Helvetica, sans-serif;
->>>>>>> 7da239737a7f20160b322b4afbcea30eb7c830ef
   font-weight: bold;
   font-size: 15px;
   color: #FF0000;

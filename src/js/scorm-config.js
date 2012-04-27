@@ -11,22 +11,13 @@ var pingCount = 0;  // Conta a quantidade de pings enviados para o LMS
 
 // Inicia a AI.
 $(document).ready(function(){
-  
-<<<<<<< HEAD
-  //Deixa a aba "Orientações" ativa no carregamento da atividade
-  $('#exercicios').tabs({ selected: 2 });
 
-  $('#exercicios').tabs({
-      select: function(event, ui) {
-       
-	    screenExercise = ui.index + 1;
-=======
+  //Deixa a aba "Orientações" ativa no carregamento da atividade
   $('#exercicios').tabs({ selected: 2 });
   
   $('#exercicios').tabs({
       select: function(event, ui) {
         screenExercise = ui.index + 1;
->>>>>>> 7da239737a7f20160b322b4afbcea30eb7c830ef
         
         if (screenExercise == 2) {
           var dx = document.ggbApplet.getXCoord('r');
