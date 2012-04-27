@@ -1,0 +1,17 @@
+* Já coloquei as 2 questões no próprio HTML
+* Use sempre o index.html (o AI_xxx.html será o alvo de exportação do Geogebra)
+* Sortear o ponto R2 nos intervalos x \in [-3, +5] e y \in [-1, +3] (isto limitará a necessidade de zoom pelo usuário)
+* Condições para resposta certa ao exercício 1:
+  1) orientação(e_rho) = orientação(r) = orientação(R2) <<25 pontos>>
+  2) orientação(e_phi) = orientação(e_rho) + 90º (sentido anti-horário) <<25 pontos>>
+* A condição e_rho . e_phi = 0 (produto escalar) NÃO garante a resposta certa.
+* Acho que um tolerância de 5º na orientação, em r_rho ou e_phi é aceitável.
+* As duas condições acima podem ser SUBSTITUÍDAS por:
+  1) e_rho . r = +|r|  (produto escalar)
+  2) e_rho x e_phi . (0,0,1) = +1 (produto misto)
+* Condições para resposta certa ao exercício 2:
+  1) componente r_rho = sqrt(R2.x^2 + R2.y^2) <<25 pontos>>
+  2) componente r_phi = 0 (sempre) <<25 pontos>>
+* Note que na questão 2 é preciso manipular a tag com id "modulo_r", inserindo nela o módulo de r (vetor posição; ponto R2)
+* Possíveis problemas na detecção da resposta:
+  1) O aluno pode acumular erros na orientação dos versores. Por exemplo, ele pode posicionar e_rho com um erro de 4º (dentro da margem de erro) e, digamos, erro de 3º na orientação de e_phi --- com relação a e_rho ---, de tal modo que o erro total será de 8º, maior que a tolerância. Obviamente um erro assim será visível. Será que podemos usar isso a nosso favor e não nos preocupar com essa questão?
