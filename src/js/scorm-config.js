@@ -13,19 +13,24 @@ var pingCount = 0;  // Conta a quantidade de pings enviados para o LMS
 $(document).ready(function(){
 
   //Deixa a aba "Orientações" ativa no carregamento da atividade
-  $('#exercicios').tabs({ selected: 2 });
+  $('#exercicios').tabs({ selected: 0 });
   
   $('#exercicios').tabs({
       select: function(event, ui) {
-        screenExercise = ui.index + 1;
-        
-        if (screenExercise == 2) {
-          var dx = document.ggbApplet.getXCoord('r');
-          var dy = document.ggbApplet.getYCoord('r');
-          var modulo = Math.sqrt(dx * dx + dy * dy);
+
+	if (ui.index == 1) {
+		screenExercise = ui.index;
+	}
+	else if (ui.index == 2) {
+		screenExercise = ui.index;
+
+	        var dx = document.ggbApplet.getXCoord('r');
+         	var dy = document.ggbApplet.getYCoord('r');
+		var modulo = Math.sqrt(dx * dx + dy * dy);
           
-          $('#modulo_r').html(modulo.toFixed(1).replace('.',','));
-        }
+		$('#modulo_r').html(modulo.toFixed(1).replace('.',','));
+	}
+
       }
   });
   
@@ -103,7 +108,7 @@ function initAI () {
     
     // Posiciona o aluno no exercício da vez
     screenExercise = scormExercise;
-    $('#exercicios').tabs("select", scormExercise - 1);
+    $('#exercicios').tabs("select", scormExercise);
     
     pingLMS();
   }
@@ -119,10 +124,8 @@ function initAI () {
   // (Re)abilita os exercícios já feitos e desabilita aqueles ainda por fazer.
   if (completed) $('#exercicios').tabs("option", "disabled", []);
   else {
-    for (i = 0; i < N_EXERCISES; i++) {
-      if (i < scormExercise) $('#exercicios').tabs("enable", i);
-      else $('#exercicios').tabs("disable", i);
-    }
+	$('#exercicios').tabs((scormExercise >= 1 ? "enable": "disable"), 1);
+	$('#exercicios').tabs((scormExercise >= 2 ? "enable": "disable"), 2);
   }
 }
 
@@ -190,7 +193,7 @@ function evaluateExercise (event) {
 function nextExercise () {
   if (scormExercise < N_EXERCISES) ++scormExercise;
   
-  $('#exercicios').tabs("enable", (scormExercise - 1));
+  $('#exercicios').tabs("enable", scormExercise);
 }
 
 /*
@@ -240,9 +243,7 @@ function getScore (exercise) {
       var e_rho = parseFloat($('#r_x').val().replace(',','.'));    
       var e_phi = parseFloat($('#r_y').val().replace(',','.'));
       var modulo_r = parseFloat($('#modulo_r').text().replace(',','.'));
-     console.log("e_rho = " + e_rho);
-     console.log("e_phi = " + e_phi);
-     console.log("modulo = " + modulo_r);
+ 
       if (Math.abs(e_rho - modulo_r < 0.1) && Math.abs(e_phi) < 0.1) {
           ans = 50;
       } else {
