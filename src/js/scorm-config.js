@@ -41,9 +41,17 @@ $(document).ready(function(){
 
   $('#button1').button().click(evaluateExercise);
   $('#button2').button().click(evaluateExercise);
+  $('#button3').button().click(reloadPage);
   
   initAI();
 });
+
+//Refresh da Página.
+function reloadPage()
+{
+	document.getElementById("limpa").reset();
+	window.location.reload() 
+}
 
 // Encerra a AI.
 $(window).unload(function (){
