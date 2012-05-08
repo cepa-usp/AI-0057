@@ -1,16 +1,9 @@
 Copying from /c/Users/Maria Isabel/AIs/AI-0057 to cepa@arquivos.atp.usp.br:/work/PUBLICACAO/atividades-interativas/AI-0057
 building file list ... done
+./
 AI-0057_SCO.zip
-geogebra.jar
-geogebra_cas.jar
-geogebra_export.jar
-geogebra_gui.jar
-geogebra_main.jar
-geogebra_properties.jar
 index.html
 SCO/index.html
-SCO/js/scorm-config.js
-js/scorm-config.js
 
-sent 2926924 bytes  received 34361 bytes  1974190.00 bytes/sec
-total size is 5691281  speedup is 1.92
+sent 16880 bytes  received 1626 bytes  37012.00 bytes/sec
+total size is 5691447  speedup is 307.55
