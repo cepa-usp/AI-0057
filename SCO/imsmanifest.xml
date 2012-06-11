@@ -34,7 +34,6 @@
 		<file href="./js/SCORM_API_wrapper.js"/>
 		<file href="./js/scorm-config.js"/>
 		<file href="./js/jquery-1.4.2.min.js"/>
-		<file href="./js/jquery-ui-1.8.5.custom.min.js"/>
 		<file href="./js/jquery-ui-1.8.6.custom.min.js"/>
 	<file href="./jar/geogebra.jar"/>
 	<file href="./jar/geogebra_algos.jar"/>
